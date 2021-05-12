@@ -8,5 +8,12 @@ pipeline {
           '''
           }
         }
+     stage ('Upload Artifact')
+        steps {
+        sh '''
+          curl -v -u admin:admin --upload-file frontend.zip http://34.200.251.226:8081/repository/frontend/frontend.zip
+         
+           ''' 
+        }
      }
   }
