@@ -5,7 +5,7 @@ pipeline {
         steps {
           sh '''
              cd static
-             zip ../frontend.zip *
+             zip -r ../frontend.zip . -i *
           '''
           }
         }
