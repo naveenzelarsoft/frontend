@@ -1,10 +1,18 @@
 pipeline {
   agent any
     stages {
+
+     stage('Download Dependencies') {
+      steps {
+       sh '''
+         npm install && npm run build
+       '''
+     }
+    }
       stage ('Prepare Artifacts') {
         steps {
           sh '''
-             zip -r frontend.zip *
+             zip -r frontend.zip node_modules dist
           '''
           }
         }
@@ -12,8 +20,8 @@ pipeline {
         steps {
         sh '''
           curl -f -v -u admin:admin --upload-file frontend.zip http://3.236.187.195:8081/repository/frontend/frontend.zip
-         
-           ''' 
+
+           '''
           }
         }
      }
