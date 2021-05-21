@@ -1,3 +1,8 @@
 @Library('todos') _
 
-todos()
+todos(
+ COMPONENT         : 'frontend',
+ PROJECT_NAME      : "todos",
+ SLAVE_LABEL       : "dev",
+ SKIP_NEXUS_UPLOAD : false
+)
