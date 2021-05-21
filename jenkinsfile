@@ -3,5 +3,4 @@
 todos(
  COMPONENT         : 'frontend',
  PROJECT_NAME      : "todos",
- SKIP_NEXUS_UPLOAD : true
 )
