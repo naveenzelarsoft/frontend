@@ -4,5 +4,6 @@ todos(
  COMPONENT         : 'frontend',
  PROJECT_NAME      : "todos",
  SLAVE_LABEL       : "DEV",
- APP_TYPE          : "GOLANG"
+ APP_TYPE          : "GOLANG",
+ SKIP_NEXUS_UPLOAD : true
 )
