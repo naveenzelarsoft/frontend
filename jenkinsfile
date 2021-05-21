@@ -3,6 +3,6 @@
 todos(
  COMPONENT         : 'frontend',
  PROJECT_NAME      : "todos",
- SLAVE_LABEL       : 'DEV',
+ SLAVE_LABEL       : "linux",
  SKIP_NEXUS_UPLOAD : true
 )
