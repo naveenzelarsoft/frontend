@@ -4,5 +4,5 @@ todos(
  COMPONENT         : 'frontend',
  PROJECT_NAME      : "todos",
  SLAVE_LABEL       : "dev",
- SKIP_NEXUS_UPLOAD : false
+ SKIP_NEXUS_UPLOAD : true
 )
