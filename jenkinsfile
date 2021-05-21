@@ -5,5 +5,4 @@ todos(
  PROJECT_NAME      : "todos",
  SLAVE_LABEL       : "DEV",
  APP_TYPE          : "NGINX",
- SKIP_NEXUS_UPLOAD : true
 )
