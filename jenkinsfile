@@ -1,7 +1,7 @@
 @Library('todos') _
 
 todos(
- COMPONENT         : "frontend",
+ COMPONENT         : 'frontend',
  PROJECT_NAME      : "todos",
  SKIP_NEXUS_UPLOAD : true
 )
