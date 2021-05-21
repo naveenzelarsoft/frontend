@@ -3,4 +3,5 @@
 todos(
  COMPONENT         : 'frontend',
  PROJECT_NAME      : "todos",
+ SLAVE_LABEL       : "DEV"
 )
