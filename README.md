@@ -1,3 +1,2 @@
-install npm
-bootstrap
-postcss
+apt installl nodejs
+apt install npm
