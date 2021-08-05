@@ -1,4 +1,4 @@
-FROM      node:8-alpine builder
+FROM      node:8-alpine AS builder
 COPY      package.json ./
 RUN       npm install && mkdir /frontend && mv ./node_modules ./frontend
 WORKDIR   /frontend
