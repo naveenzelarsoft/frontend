@@ -1,5 +1,5 @@
 FROM      node builder
-COPY      package.json package-lock.json ./
+COPY      package.json ./
 RUN       npm install && mkdir /frontend && mv ./node_modules ./frontend
 WORKDIR   /frontend
 COPY       . .
