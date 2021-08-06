@@ -1,5 +1,5 @@
 FROM      node:8-alpine AS builder
-COPY      package.json ./
+COPY      package.json package-lock.json ./
 RUN       npm install && mkdir /frontend && mv ./node_modules ./frontend
 WORKDIR   /frontend
 COPY       . .
