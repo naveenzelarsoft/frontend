@@ -8,7 +8,7 @@ CMD        /usr/sbin/nginx -g "daemon off;"
 
 
 FROM      node:8-alpine
-COPY      --from=builder ./frontend /usr/share/nginx/html/
+COPY      --from=builder ./frontend /usr/share/nginx/html/frontend
 WORKDIR   /usr/share/nginx/html/frontend
 RUN       npm install
 RUN       npm run build
