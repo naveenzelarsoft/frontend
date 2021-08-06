@@ -5,7 +5,6 @@ RUN       npm install
 RUN       npm run build
 
 
-
 FROM       nginx
 RUN        rm /usr/share/nginx/html/*
 CMD        mkdir /usr/share/nginx/html/frontend
