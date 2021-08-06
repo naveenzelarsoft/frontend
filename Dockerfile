@@ -1,5 +1,6 @@
 FROM       nginx AS builder
 COPY       package.json package-lock.json build ./
+COPY       build ./build
 RUN        rm /etc/nginx/conf.d/default.conf
 COPY       todo.conf /etc/nginx/conf.d
 EXPOSE     80
