@@ -9,7 +9,7 @@ RUN        npm run build
 
 
 FROM       nginx
-COPY       --from=builder /frontend/build /usr/share/nginx/html
+COPY       --from=builder /frontend/dist /usr/share/nginx/html
 RUN        rm /etc/nginx/conf.d/default.conf
 COPY       todo.conf /etc/nginx/conf.d
 EXPOSE     80
